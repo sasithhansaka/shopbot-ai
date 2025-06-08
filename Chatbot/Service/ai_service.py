@@ -1,7 +1,7 @@
 import json
 from openai import OpenAI
 from config import settings
-from services.product_service import get_allowed_products
+from Service.product_service import get_allowed_products
 
 client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
