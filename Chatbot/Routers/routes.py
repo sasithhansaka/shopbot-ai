@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from models import ChatRequest
+from models.model import ChatRequest
 from Service.product_service import find_product
 from Service.ai_service import generate_ai_response, extract_keywords
 from config import settings
