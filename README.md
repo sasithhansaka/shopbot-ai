@@ -1,8 +1,8 @@
-# 🛍️ AI-Powered Customer Support Chatbot – ShopBot AI
+# AI-Powered Customer Support Chatbot 
 
 A FastAPI-based backend chatbot that integrates with OpenAI to provide intelligent customer support responses for an e-commerce platform. MongoDB is used for storing product data, and the chatbot can understand user queries and reply with relevant product or support information.
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 chatbot/
@@ -18,14 +18,11 @@ chatbot/
 │   └── product_service.py
 │
 ├── .env                   # Environment variables
-├── .gitignore
-├── config.py                # FastAPI app entry point
-├── main.py                # FastAPI app entry point
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+├── config.py      
+└── main.py                # FastAPI app entry point
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 
@@ -58,7 +55,7 @@ MONGO_DB_NAME="e_commerce"
 MONGO_COLLECTION_NAME="products"
 ```
 
-## ▶️ Run the App
+## Run the App
 
 ```bash
 uvicorn main:app --reload
@@ -67,13 +64,13 @@ uvicorn main:app --reload
 The API will be available at:  
 `http://127.0.0.1:8000`
 
-## 📨 API Endpoint
+##  API Endpoint
 
 ### POST `/chat`
 
 Send a message to the chatbot.
 
-#### ✅ Request Body (JSON):
+#### Request Body (JSON):
 
 ```json
 {
@@ -81,7 +78,7 @@ Send a message to the chatbot.
 }
 ```
 
-#### 🔁 Response:
+#### Response:
 
 ```json
 {
@@ -89,15 +86,15 @@ Send a message to the chatbot.
 }
 ```
 
-## 🧠 Features
+## Features
 
-- 💬 Chat with an AI-powered assistant
-- 📦 Product info sourced from MongoDB
-- 🤖 Powered by OpenAI GPT
-- 🧑 Includes user details for personalized responses
-- 🚀 FastAPI framework for quick API development
+- Chat with an AI-powered assistant
+- Product info sourced from MongoDB
+- Powered by OpenAI GPT
+- Includes user details for personalized responses
+- FastAPI framework for quick API development
 
-## 🧪 Testing with Postman
+## Testing with Postman
 
 1. Open Postman
 2. Set method to `POST`
@@ -112,7 +109,7 @@ Send a message to the chatbot.
 }
 ```
 
-## 📌 Dependencies
+## Dependencies
 
 See `requirements.txt`:
 
